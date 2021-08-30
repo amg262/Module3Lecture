@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int cups, cupsPoured = 0, freeCups;
+            int cups = 0, cupsPoured = 0, freeCups = 0;
             double total, tip;
             const double PRICE_OF_LEMONADE = 0.99;
             
@@ -20,8 +20,11 @@ namespace ConsoleApp1
                 //Console.WriteLine("Thank you! Because of special, you get {0:N} cups!", freeCups);
                 Console.WriteLine($"Thank you! Because of special, you get {freeCups:N} cups!");
                 cupsPoured += freeCups;
-
             }
+
+            total = cups * PRICE_OF_LEMONADE;
+            
+            Console.WriteLine($"Your total is {total:C}");
         }
     }
 }
