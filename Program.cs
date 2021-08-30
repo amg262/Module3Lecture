@@ -48,6 +48,23 @@ namespace ConsoleApp1
             total += tip;
             Console.WriteLine($"Total money made: {total:C}");
 
+            /*
+             * Using ternary operators for if-else replacement
+             */
+            int score;
+
+            Console.WriteLine("Score>");
+            score = Convert.ToInt32(Console.ReadLine());
+
+            // longer way
+            string output = score < 60 ? "You fail" : "You pass";
+            Console.WriteLine(output);
+            
+            // skips variable only used once, more efficient
+            Console.WriteLine(score < 60 ? "You fail" : "You pass");
+            
+            
+            
         }
     }
 }
