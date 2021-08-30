@@ -62,9 +62,28 @@ namespace ConsoleApp1
             
             // skips variable only used once, more efficient
             Console.WriteLine(score < 60 ? "You fail" : "You pass");
-            
-            
-            
+
+
+            /*
+             * switch statement always needs break after each line, even in default
+             */
+            int option = 0;
+
+            Console.WriteLine("Welcome!\n1.\n2.");
+
+            switch (option) 
+            {
+                case 1:
+                    Console.WriteLine("1");
+                    break;
+                case 2:
+                    Console.WriteLine("2");
+                    break;
+                default:
+                    Console.WriteLine("Invalid");
+                    break;
+            }
+
         }
     }
 }
